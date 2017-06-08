@@ -1,0 +1,271 @@
+* /* Overrideing default settings of entire page for better control */
+{
+    margin: 0px;
+    padding: 0px; 
+}
+
+header, nav, section, aside, footer /* Making sure everyone of these elements start on a new line */
+{
+	display:block;
+}
+
+body /* Setting style of whole body and background */
+{
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	background:-webkit-radial-gradient(center,circle,purple,black);
+	font-family: arial;
+	color:white;
+}
+
+#wholepage /* Entire content of pages */
+{
+	max-width:1200px;
+	margin:20px 0px;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
+}
+
+header /* Setting style of header */
+{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+header > form /* Adjusting the header form to the right */
+{
+    float:right;
+}
+
+#error /* Error messages */
+{
+    color: red;
+    font-style: oblique;
+    font-weight: bold;
+    display: block;
+}
+
+#main-nav /* Navigation */
+{
+    border: 2px,0px,2px,2px, solid black;
+    border-radius: 7px;
+    background-color: #1E0726;
+}
+
+#main-nav li /* Making sure the navigation contents are all inline and transform when hovered */
+{
+	display: inline-block ; /*Position left to right*/
+	list-style: none;
+    margin: 5px;
+	padding: 10px;
+    transition: transform 0.5s;
+}
+
+#main-nav li:hover /* Allows the links of different pages to increase in size when hovered */
+{
+    transform: scale(1.5, 1.25);
+}
+
+#main-nav li a /* Adjusting the size of the links */
+{
+    font-size:20px;
+}
+
+.selected /* Highlighting the page the user is on*/
+{
+
+    background-color: darkorange;
+    font-style: bold;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+a /* Making sure the links remain the same color as the rest of the text on the page*/
+{
+    color:white;
+    text-decoration: none;
+}
+
+#main-section /* Content of each page not including header and navigation */
+{
+    margin: 0px, 20px;
+    padding: 10px;
+    background-color: #1E0726;
+    border-radius: 7px;
+}
+
+div.img /* Images in a div tag to make a gallery */
+{
+    margin: 20px;
+    float: left;
+}
+
+div.img img:hover /* To increase the size and color of the images once hovered */
+{
+    border: 1px solid #777;
+    transform: scale(1.5, 1.25);
+}
+
+div.img img /* Each image in the gallery */
+{
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    transition: transform 0.5s;
+}
+
+#statboard /* Player status board on gamepage */
+{
+    float:left;
+    margin:5px;
+    padding:20px;
+    border-radius: 7px;
+    position:relative;
+    background-color:#5C1111;
+    width:20%;
+    height: 480px;
+}
+
+#userData /* List in status board */
+{
+    list-style-type: none;
+}
+
+#userData > li /* Spacing out the players stats between each other*/
+{
+    padding-top: 50px;
+}
+
+#userData > li:first-child /* Highlighting the player's username */
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#Game /* Content of the game page */
+{
+    margin:5px;
+    padding:5px;
+    border-radius: 7px;
+    width:59%;
+    position:absolute;
+    padding-top:20px;
+    left:30%
+}
+
+#gameover /* Message when player ends the game*/
+{
+    width: 50%;
+    background-color: darkred;
+    border-radius: 7px;
+    padding: 20px;
+    text-align:center;
+}
+
+#retry /* Button to retry the game again once the player has lost a previous game*/
+{
+    font-weight: bold;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    background-color: darkorange;
+    border-radius: 7px;
+    margin-left:185px;
+}
+
+#retry:hover /* Assist the player to identify it as a button */
+{
+    border-color: white;
+}
+
+#main-footer /*Footer of the page*/
+{
+    padding-top: 20px;
+    border-top: 2px solid white;
+}
+
+#account /* Log-In form */
+{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 7px;
+    background-color: #684A6E;
+    padding: 10px;
+}
+
+#account input /* Loggin form fields*/
+{
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 7px;
+}
+
+#account input[type = button] /* Loggin form buttons */
+{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+#main-section table /* Scoreboard */
+{
+    width:100%;
+}
+
+table, th, td /* Scoreboard elements */
+{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td /* Scorboard titles and data */
+{
+    padding: 10px;
+    text-align: center;
+}
+
+th /* Scoreboard titles */
+{
+    text-decoration: underline;
+}
+
+#signup /* Registration form */
+{
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    background-color: #684A6E;
+}
+
+#signup > h3 /* Registration Title */
+{
+    margin-top: 20px;
+}
+
+#signup > input /* Registration data fields */
+{
+    width: 50%;
+    padding: 6px 10px;
+    margin: 8px, 0px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 7px;
+}            
+
+#signup > input[type = button] /* Registration button */
+{
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 14px;
+    height:50px;
+}
